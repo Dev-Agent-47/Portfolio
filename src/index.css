@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    background-color: #f2f2f2;
+    color: #333333;
+    overflow-x: hidden;
+}
+
+@layer utilities {
+    .active {
+        background-color: #333333;
+        color: #f2f2f2;
+    }
+
+    .flex-center {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+}
+
+.anime {
+    animation: morphing 10s infinite linear;
+    border-radius: 67% 33% 74% 26% / 28% 75% 25% 72%;
+    border: 8px solid rgba(0, 0, 0, 0.384);
+}
+
+.bwi {
+    filter: grayscale(100%);
+}
+
+
+@keyframes morphing {
+    0% {
+        border-radius: 51% 49% 69% 31% / 43% 54% 46% 57%;
+    }
+
+    25% {
+        border-radius: 36% 64% 69% 31% / 57% 42% 58% 43%;
+    }
+
+    50% {
+        border-radius: 62% 38% 38% 62% / 53% 42% 58% 47%;
+    }
+
+    75% {
+        border-radius: 35% 65% 47% 53% / 61% 46% 54% 39%;
+    }
+
+    100% {
+        border-radius: 51% 49% 69% 31% / 43% 54% 46% 57%;
+    }
+}
