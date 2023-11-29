@@ -19,7 +19,7 @@ const ContactSection = () => {
                                     <div key={id} className='flex flex-col items-center justify-center bg-container-color w-[250px] rounded-xl border-[1px] border-text-color my-5 py-5'>
                                         {item.icon}
                                         <h1 className='text-[14px] font-semibold mt-3'>{item.name}</h1>
-                                        <h1 className='text-[12px]'>{item.userid}</h1>
+                                        <a target="_blank" rel="noopener noreferrer" href={item.link}> <h1 className='text-[12px]'>{item.userid}</h1></a>
                                     </div>
                                 )
                             })
@@ -47,7 +47,9 @@ const ContactSection = () => {
                             </div>
                         </div>
                         <div className='mob:flex-center'>
-                            <Button name="Send Message" icon={<IoSendOutline style={{ color: 'white', fontSize: '20px' }} />} style="bg-title hover:bg-title-dark text-container-color" />
+                            <a href="mailto:harry.harry0024@gmail.com">
+                                <Button name="Send Message" icon={<IoSendOutline style={{ color: 'white', fontSize: '20px' }} />} style="bg-title hover:bg-title-dark text-container-color" />
+                            </a>
                         </div>
                     </div>
                 </div>

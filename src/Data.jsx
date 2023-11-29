@@ -144,17 +144,20 @@ export const Contact = [
         name: 'Mail',
         userid: 'hariom.gaud00@gmail.com',
         icon: <MdEmail style={{ fontSize: '25px' }} />,
+        link: "mailto:harry.harry0024@gmail.com"
     },
     {
         id: 2,
         name: 'Linkedn',
         userid: 'Hariom Gaud',
         icon: <FaLinkedin style={{ fontSize: '25px' }} />,
+        link: "https://www.linkedin.com/in/hariom-gaud-aa5986206/"
     },
     {
         id: 3,
         name: 'Github',
-        userid: 'Agent47',
+        userid: 'Im-ScrappyTheCholo',
         icon: <FaGithub style={{ fontSize: '25px' }} />,
+        link: "https://github.com/Im-ScrappyTheCholo?tab=repositories"
     },
 ]

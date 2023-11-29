@@ -32,7 +32,7 @@ const AboutSection = () => {
                             </div>
                             <div className='mob:px-6 mob:flex-center mob:flex-col'>
                                 <p className='mb-14 mt-5 w-[400px] mob:w-auto text-[15px] text-text-color'>Frontend Developer, I create web pages with UI/UX interfaces. I have years of experience and many clients are happy with the Projects carried out by me.</p>
-                                <a href={resume} download="resume"><Button name="Download CV" icon={<BsFiletypePdf style={{ color: 'white', fontSize: '20px' }} />} style="bg-title hover:bg-title-dark text-container-color" /></a>
+                                <a href={resume} target='_blank' download="resume"><Button name="Download CV" icon={<BsFiletypePdf style={{ color: 'white', fontSize: '20px' }} />} style="bg-title hover:bg-title-dark text-container-color" /></a>
                             </div>
                         </div>
                     </div>
